@@ -1,0 +1,50 @@
+<h1 class="title">Formulario para contacto</h1>
+	<h2 class="subtitle">Nuevo usuario</h2>
+</div>
+<div class="container pb-6 pt-6">
+
+	<div class="form-rest mb-6 mt-6"></div>
+
+	<form action="https://formsubmit.co/marricasanovasolano15@gmail.com" method="POST">
+		<div class="columns">
+		  	<div class="column">
+		    	<div class="control">
+					<label>Nombres</label>
+				  	<input class="input" type="text" name="Nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
+				</div>
+		  	</div>
+		  	<div class="column">
+		    	<div class="control">
+					<label>Apellidos</label>
+				  	<input class="input" type="text" name="Apellido" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
+				</div>
+		  	</div>
+		</div>
+		<div class="columns">
+		  	<div class="column">
+		    	<div class="control">
+					<label>Asunto</label>
+				  	<input class="input" type="text" name="Asunto" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" required >
+				</div>
+		  	</div>
+			<div class="columns">
+				<div class="column">
+				  <div class="control">
+					  <label>Telefono</label>
+						<input class="input" type="text" name="Telefon0" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" required >
+				  </div>
+				</div>
+		  	<div class="column">
+		    	<div class="control">
+					<label>Email</label>
+				  	<input class="input" type="email" name="Email" maxlength="70" >
+				</div>
+		  	</div>
+		</div>
+		<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+
+        <button type="submit" class="button is-info is-rounded">Enviar</button>
+        <input type="hidden" name="_next" value="http://localhost/">
+		<input type="hidden" name="_captcha" value="false">
+	</form>
+</div>
